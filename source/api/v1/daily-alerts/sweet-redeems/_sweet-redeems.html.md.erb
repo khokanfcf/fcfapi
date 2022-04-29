@@ -1,0 +1,214 @@
+## Sweet Redeems - Get All Valid Posts
+
+Daily alerts API filters return all valid posts from category Sweet Redeems based category params 608. We can also do some extra filters with below available parameters
+
+### HTTP request ###
+
+<div class="api-request">
+    <div class="endpoint-data">
+        <i class="label label-get">GET</i>
+        <h6>/wp-json/fcf/v1/daily-alerts-v2/?category=608</h6>
+    </div>
+</div>
+
+```shell
+curl --location --request GET 'https://dev.firstclassflyer.com/wp-json/fcf/v1/daily-alerts-v2/?category=608'
+```
+
+```php
+<?php
+
+$curl = curl_init();
+
+curl_setopt_array($curl, array(
+    CURLOPT_URL => 'https://dev.firstclassflyer.com/wp-json/fcf/v1/daily-alerts-v2/?category=608',
+    CURLOPT_RETURNTRANSFER => true,
+    CURLOPT_ENCODING => '',
+    CURLOPT_MAXREDIRS => 10,
+    CURLOPT_TIMEOUT => 0,
+    CURLOPT_FOLLOWLOCATION => true,
+    CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+    CURLOPT_CUSTOMREQUEST => 'GET',
+));
+
+$response = curl_exec($curl);
+
+curl_close($curl);
+echo $response;
+?>
+```
+
+```javascript
+var requestOptions = {
+    method: 'GET',
+    redirect: 'follow'
+};
+
+fetch("https://dev.firstclassflyer.com/wp-json/fcf/v1/daily-alerts-v2/?category=608", requestOptions)
+    .then(response => response.text())
+    .then(result => console.log(result))
+    .catch(error => console.log('error', error));
+```
+
+> This is the response we should get
+
+```json
+[
+    {
+        "type": "miles",
+        "date": "<time datetime=\"2022-04-16\">A week ago</time>",
+        "badge": null,
+        "thumb": "<img src=\"https://dev.firstclassflyer.com/wp-content/uploads/2017/06/tokyo-japan-768x512.jpg\" loading=\"lazy\">",
+        "classes": [
+            "miles"
+        ],
+        "thumb_src": "https://dev.firstclassflyer.com/wp-content/uploads/2017/06/tokyo-japan-768x512.jpg",
+        "title": "Asia",
+        "subtitle": "First Class",
+        "routes": [
+            {
+                "origin": "San Francisco",
+                "destination": "Tokyo"
+            }
+        ],
+        "currencies": [
+            {
+                "label": "Use These Miles / Points:",
+                "logos": [
+                    {
+                        "name": "Alaska miles",
+                        "logo": "https://dev.firstclassflyer.com/wp-content/uploads/2017/08/Alaska.svg"
+                    },
+                    {
+                        "name": "American miles",
+                        "logo": "https://dev.firstclassflyer.com/wp-content/uploads/2017/08/AA.svg"
+                    },
+                    {
+                        "name": "Amex points",
+                        "logo": "https://dev.firstclassflyer.com/wp-content/uploads/2017/08/AMEX.svg"
+                    },
+                    {
+                        "name": "British Airways miles",
+                        "logo": "https://dev.firstclassflyer.com/wp-content/uploads/2017/08/BA.svg"
+                    },
+                    {
+                        "name": "Cathay Pacific miles",
+                        "logo": "https://dev.firstclassflyer.com/wp-content/uploads/2017/08/Cathay.svg"
+                    },
+                    {
+                        "name": "Chase points",
+                        "logo": "https://dev.firstclassflyer.com/wp-content/uploads/2017/08/Chase.svg"
+                    },
+                    {
+                        "name": "Citi points",
+                        "logo": "https://dev.firstclassflyer.com/wp-content/uploads/2017/08/CITI.svg"
+                    },
+                    {
+                        "name": "Iberia miles",
+                        "logo": "https://dev.firstclassflyer.com/wp-content/uploads/2017/08/Iberia.svg"
+                    },
+                    {
+                        "name": "Japan miles",
+                        "logo": "https://dev.firstclassflyer.com/wp-content/uploads/2017/08/JAL.svg"
+                    }
+                ]
+            }
+        ],
+        "travel_months": "Jul 2022; Mar and Apr 2023",
+        "savings": "200,000",
+        "link": "https://dev.firstclassflyer.com/handful-of-japan-airlines-first-class-single-seat-opportunities-from-san-francisco-and-many-other-u-s-cities-to-tokyo-beyond/",
+        "raw_savings": "200000",
+        "allowed": false,
+        "disable_link": false,
+        "add_link": false,
+        "btn_label": "Join for Free"
+    },
+    {
+        "type": "miles",
+        "date": "<time datetime=\"2022-04-16\">A week ago</time>",
+        "badge": null,
+        "thumb": "<img src=\"https://dev.firstclassflyer.com/wp-content/uploads/2017/12/tokyo-japan-3-768x512.jpg\" loading=\"lazy\">",
+        "classes": [
+            "miles"
+        ],
+        "thumb_src": "https://dev.firstclassflyer.com/wp-content/uploads/2017/12/tokyo-japan-3-768x512.jpg",
+        "title": "Asia",
+        "subtitle": "Business Class",
+        "routes": [
+            {
+                "origin": "Chicago",
+                "destination": "Tokyo"
+            }
+        ],
+        "currencies": [
+            {
+                "label": "Use These Miles / Points:",
+                "logos": [
+                    {
+                        "name": "Alaska miles",
+                        "logo": "https://dev.firstclassflyer.com/wp-content/uploads/2017/08/Alaska.svg"
+                    },
+                    {
+                        "name": "American miles",
+                        "logo": "https://dev.firstclassflyer.com/wp-content/uploads/2017/08/AA.svg"
+                    },
+                    {
+                        "name": "Amex points",
+                        "logo": "https://dev.firstclassflyer.com/wp-content/uploads/2017/08/AMEX.svg"
+                    },
+                    {
+                        "name": "Cathay Pacific miles",
+                        "logo": "https://dev.firstclassflyer.com/wp-content/uploads/2017/08/Cathay.svg"
+                    },
+                    {
+                        "name": "Chase points",
+                        "logo": "https://dev.firstclassflyer.com/wp-content/uploads/2017/08/Chase.svg"
+                    },
+                    {
+                        "name": "Citi points",
+                        "logo": "https://dev.firstclassflyer.com/wp-content/uploads/2017/08/CITI.svg"
+                    },
+                    {
+                        "name": "Iberia miles",
+                        "logo": "https://dev.firstclassflyer.com/wp-content/uploads/2017/08/Iberia.svg"
+                    },
+                    {
+                        "name": "Japan miles",
+                        "logo": "https://dev.firstclassflyer.com/wp-content/uploads/2017/08/JAL.svg"
+                    },
+                    {
+                        "name": "Marriott points",
+                        "logo": "https://dev.firstclassflyer.com/wp-content/uploads/2018/08/Marriott.svg"
+                    }
+                ]
+            }
+        ],
+        "travel_months": "Jul, Aug, Sep, Nov and Dec 2022; Jan, Feb, Mar and Apr 2023",
+        "savings": "140,000",
+        "link": "https://dev.firstclassflyer.com/tokyo-loads-of-discount-japan-airlines-business-class-availability-chicago-to-tokyo-and-beyond/",
+        "raw_savings": "140000",
+        "allowed": false,
+        "disable_link": false,
+        "add_link": false,
+        "btn_label": "Join for Free"
+    }
+]
+```
+
+### Request Information
+|Category|Value|
+|------------|-----------|
+|Method|`GET`|
+|Url|`https://dev.firstclassflyer.com/wp-json/fcf/v1/daily-alerts-v2/?category=608`|
+
+### Available Query Parameters
+|Query Params|Required|Description|
+|-------------|-------------|-----------------|
+|category|required| Category ID of posts. For example - `608` id is for sweet redeems posts|
+|travel-to|optional| Ex. - `679,680` ,etc [ Require for “All Destinations” Filter dropdown, params values should be depends on selected values of dropdown ]|
+|availability|optional| Ex. - `2022-04,2022-05` ,etc [ Require for “All Travel Months” Filter dropdown, params values should be depends on selected values of dropdown ]|
+|point_programs|optional| Ex. - `612` ,etc [ Require for “All Point Programs” Filter dropdown, params values should be depends on selected values of dropdown ]|
+|currency|optional| Ex. - `623` ,etc [ Require for “All Mileage Programs” Filter dropdown, params values should be depends on selected values of dropdown ]|
+|miles|optional| Ex.- `54000,225000` [ Require for Sweet redeems miles range filter, params value should be depends on selected range filed value (min,max) ]|
+|sort|optional| `min`/`max` [ Require for only when we want to sort miles range as per ASC/DESC ]|
+

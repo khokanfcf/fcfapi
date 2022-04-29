@@ -2,6 +2,7 @@
 @import 'normalize';
 @import 'variables';
 @import 'icon-font';
+@import 'http-request';
 // @import 'rtl'; // uncomment to switch to RTL format
 
 /*
@@ -317,6 +318,7 @@ html, body {
 .content {
   // fixes webkit rendering bug for some: see #538
   -webkit-transform: translateZ(0);
+  transform: translateZ(0);
   // to place content above the dark box
   position: relative;
   z-index: 30;
